@@ -1,115 +1,61 @@
-Adventure Works Sales Dashboard - README
-Project Overview
-This Power BI project provides a comprehensive analysis of the Adventure Works dataset, 
-offering insights into sales, customer behaviors, product performance, and regional trends. 
-The dashboard is designed to help stakeholders understand key metrics and patterns to drive data-driven decisions. 
-It includes multiple pages of interactive visualizations, allowing users to explore data dynamically.
+Adventure Works Sales Dashboard
 
-Key Features
-1. Product Performance
-Purpose: Analyze product-level revenue, return rates, and sales trends.
-Visualizations:
-Line Chart: Displays revenue trends over time by product.
-Pie Chart: Illustrates revenue contributions by product category.
-Table: Lists product-level performance metrics such as revenue, return rate, and average sales per product.
-Key Metrics:
-Total Sales
-Return Rate
-Revenue by Product
-Average Sales per Product
+About the Project
+This project showcases an interactive Power BI dashboard I created to analyze sales data, customer trends, product performance, and regional sales distribution. Using the AdventureWorks dataset, I designed multiple pages to provide a comprehensive view of the business performance over time. Each page focuses on a different aspect of the business, helping decision-makers explore insights and trends interactively.
+
+Features
+1. Regional Sales Overview
+Displays total revenue, total orders, and return rates by region using a combination of maps and bar charts.
+Includes KPIs for total revenue, total orders, and returns.
+Helps identify regions with the highest and lowest sales performance.
+
 
 2. Customer Insights
-Purpose: Explore customer-level performance and identify high-value customers.
-Visualizations:
-Pie Chart: Represents customer distribution by region.
-Table: Lists customer-specific metrics like lifetime value, total profit, and average revenue per customer.
-KPI Cards: Highlight key metrics such as total customers and top-spending customers.
-Line Chart: Tracks revenue and customer growth over time.
-Key Metrics:
-AvgRevenuePerCustomer
-Customer Lifetime Value
-Customer Growth Rate
+Provides an overview of customer behavior and contribution to revenue.
+Includes a pie chart breaking down customers by region and KPIs for customer growth rate and lifetime value.
+Interactive slicers allow filtering by date ranges to analyze trends over time.
 
-3. Regional Sales Overview
-Purpose: Understand revenue and return patterns across regions.
-Visualizations:
-Bar Chart: Compares return rates across regions.
-Map: Shows revenue distribution by region geographically.
-Table: Provides detailed revenue and order counts by region.
-KPI Cards: Present summary metrics like total orders and total returns.
-Key Metrics:
-Total Revenue
-Return Rate
-Total Orders
+3. Product Performance
+Analyzes revenue by product category and subcategory with visualizations like donut charts and line graphs.
+Includes KPIs such as total sales and return rates for each product category.
+A table showcases the top-performing products along with their sales and return data.
 
-4. Product Sales Trends
-Purpose: Highlight monthly sales patterns and top-performing products.
-Visualizations:
-Column Chart: Shows total sales by category and subcategory.
-Line Chart: Tracks revenue trends by month.
-Table: Displays metrics for individual products.
-Key Metrics:
-Total Sales
-Return Rate
-Top Selling Product
+4. Sales Trends
+Focuses on monthly sales trends using line and clustered bar charts.
+Highlights revenue growth over time and comparison of monthly and yearly trends.
+Incorporates time intelligence measures like Year-to-Date (YTD) and rolling averages.
 
-5. Weekend and Weekday Sales Analysis
-Purpose: Compare sales performance on weekends vs. weekdays.
-Visualizations:
-Bar Chart: Displays total orders by workday type (weekday vs. weekend).
-Line Chart: Tracks revenue trends by workday type and month.
-Table: Summarizes revenue, orders, and differences between weekends and weekdays.
-KPI Cards: Show metrics such as weekend revenue and weekday orders.
-Key Metrics:
-Weekend Revenue
-Weekday Revenue
-Revenue Difference
+5. Weekend vs Weekday Sales
+Compares sales performance on weekends versus weekdays.
+Visualizations include bar charts, KPIs, and line charts segmented by workdays.
+Helps understand customer buying patterns during different parts of the week.
 
-6. Order Trends Analysis
-Purpose: Identify order growth trends and evaluate average daily orders.
-Visualizations:
-Pie Chart: Shows order distribution by region.
-Line Chart: Tracks monthly order trends.
-Table: Lists monthly order statistics, including growth rates.
-KPI Cards: Highlight metrics like average orders per day.
-Key Metrics:
-Monthly Orders
-Orders Growth Rate
-Average Orders per Day
+Tools and Techniques
+Power BI: Designed and built dashboards using visualizations like line charts, donut charts, maps, and bar charts.
+DAX: Created calculated measures such as Total Revenue, Customer Lifetime Value, and Return Rates.
+Time Intelligence: Used DAX functions like DATESYTD and DATESINPERIOD for rolling averages and cumulative totals.
 
-Data Sources:
-The dataset includes the following tables:
-Sales Data: Contains transactional information such as order quantities, revenue, and customer data.
-Returns Data: Tracks returned items and quantities.
-Product Lookup: Includes product details like name, category, and pricing.
-Calendar: Provides date-related fields for time intelligence calculations.
+Key Insights
+Certain regions like Australia and Southeast generate the most revenue, while others have higher return rates.
+Customer lifetime value is significantly influenced by frequent buyers, which are easily tracked using filters and slicers.
+Product categories like Bikes dominate revenue, with Accessories contributing less but showing steady growth.
 
-How to Use the Dashboard:
-Navigation: Use the tabs at the bottom of the dashboard to switch between pages.
-Interactivity:
-Filters: Adjust slicers and dropdowns to filter data by date, region, or product category.
-Drill-Through: Click on specific data points to explore related metrics in detail.
-Tooltips: Hover over charts to view detailed information.
-Customization: Modify existing visuals or add new ones to tailor the dashboard to specific needs.
+How to Use
+Interactive Slicers: Filter data by regions, categories, and dates to explore different trends.
+Hover for Details: Hover over visuals for detailed information about each metric.
+Cross-Filtering: Click on a region, category, or product in any visualization to see the corresponding changes across the dashboard.
 
-Key Metrics and DAX Measures:
-The dashboard uses the following pre-defined measures for calculations:
-Total Revenue
-Total Profit
-Return Rate
-AvgRevenuePerCustomer
-Weekend Revenue
-Orders Growth Rate
-90 Day Rolling Profit
-These metrics are implemented using simple, efficient DAX formulas to ensure accuracy and performance.
+Images
+![page1](https://github.com/user-attachments/assets/d05ebaa4-cc7d-4945-88b4-79827f85231a)
+![page2](https://github.com/user-attachments/assets/04a2b22a-975a-4828-88d2-990c01702150)
+![page3](https://github.com/user-attachments/assets/48e0521d-8533-4cae-80ef-b28c37e5b852)
+![page4](https://github.com/user-attachments/assets/86b8a4b6-2bba-4073-952d-fe91c7f92059)
+![page5](https://github.com/user-attachments/assets/85070bf3-3e93-40dc-aa8c-052d379419a7)
+![page6](https://github.com/user-attachments/assets/bb97b161-deca-4bc8-b295-77f08b898f90)
 
-Design and Accessibility:
-The dashboard features a dark theme for readability and consistency.
-Visuals are designed to maximize clarity and highlight key insights.
-Pages are logically structured for ease of navigation and understanding.
 
-Conclusion:
-This dashboard provides a comprehensive overview of Adventure Works' sales data, 
-empowering decision-makers with actionable insights. 
-With its interactive features and dynamic metrics, 
-it serves as a powerful tool for analyzing trends, identifying growth opportunities, and optimizing sales strategies.
+
+
+
+
+
