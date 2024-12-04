@@ -77,14 +77,14 @@ Monthly Orders
 Orders Growth Rate
 Average Orders per Day
 
-Data Sources
+Data Sources:
 The dataset includes the following tables:
 Sales Data: Contains transactional information such as order quantities, revenue, and customer data.
 Returns Data: Tracks returned items and quantities.
 Product Lookup: Includes product details like name, category, and pricing.
 Calendar: Provides date-related fields for time intelligence calculations.
 
-How to Use the Dashboard
+How to Use the Dashboard:
 Navigation: Use the tabs at the bottom of the dashboard to switch between pages.
 Interactivity:
 Filters: Adjust slicers and dropdowns to filter data by date, region, or product category.
@@ -92,7 +92,7 @@ Drill-Through: Click on specific data points to explore related metrics in detai
 Tooltips: Hover over charts to view detailed information.
 Customization: Modify existing visuals or add new ones to tailor the dashboard to specific needs.
 
-Key Metrics and DAX Measures
+Key Metrics and DAX Measures:
 The dashboard uses the following pre-defined measures for calculations:
 Total Revenue
 Total Profit
@@ -103,12 +103,12 @@ Orders Growth Rate
 90 Day Rolling Profit
 These metrics are implemented using simple, efficient DAX formulas to ensure accuracy and performance.
 
-Design and Accessibility
+Design and Accessibility:
 The dashboard features a dark theme for readability and consistency.
 Visuals are designed to maximize clarity and highlight key insights.
 Pages are logically structured for ease of navigation and understanding.
 
-Conclusion
+Conclusion:
 This dashboard provides a comprehensive overview of Adventure Works' sales data, 
 empowering decision-makers with actionable insights. 
 With its interactive features and dynamic metrics, 
